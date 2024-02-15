@@ -1,11 +1,14 @@
 #!/usr/bin/python3
+
 """ Fabscript that deletes
     out-of-date archives.
 """
+
 import os
 from fabric.api import *
 
 env.hosts = ["54.174.230.101", "100.26.57.164"]
+
 
 def do_clean(number=0):
     """
